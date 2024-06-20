@@ -1,0 +1,105 @@
+.drawingpane{
+	-fx-border-color: #2207bb;
+	-fx-border-style: solid;
+}
+
+.addBtn{
+	-fx-background-color: #008080;
+}
+.addBtn:hover {
+    -fx-background-color: #2E8B57;
+    -fx-text-fill: white;
+}
+.addBtn:pressed
+{
+     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}
+
+.deleteBtn{
+	-fx-background-color: #CD5C5C ;
+}
+.deleteBtn:hover {
+    -fx-background-color: #800000;
+    -fx-text-fill: white;
+
+}
+
+
+.button-24 {
+    -fx-background-color: #d86e3a;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75),4,0,0,1);
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.button-24:hover{
+    -fx-background-color: #9d4024;
+}
+
+.button-24:pressed
+{
+     -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}
+
+.BB-toggel {
+    -fx-background-color: #DDDDDD; /* Default button color */
+    -fx-font-size: 14px;
+}
+
+.BB-toggel:selected {
+    -fx-background-color: #8FBC8F; /* Selected button color */
+}
+
+.slider {
+
+    -fx-border-color: transparent transparent transparent transparent;
+
+}
+
+.slider .track{
+	-fx-background-color: #778899 ;
+}
+
+.slider .thumb {
+	-fx-pref-height: 30px;
+	-fx-pref-height: 10px;
+	-fx-background-color: #8FBC8F;
+}
+
+/*.background
+{
+	-fx-background-color: linear-gradient(to right bottom,#FFE4C4 , #A9A9A9  );
+
+}*/
+
+/* .infopane{
+	
+    -fx-background-color: linear-gradient(to right bottom,#6495ED , #6A5ACD  );
+    
+	-fx-border-style: solid;
+	-fx-border-color: #9637bb;
+	-fx-font-family:Arial;
+
+}
+*/
+#infotext{
+    -fx-font-family: Arial;
+    -fx-font-size: 16px;
+    -fx-font-weight: lighter;
+    -fx-font-style: italic;
+    -fx-text-alignment: center;
+    -fx-stroke: seagreen;
+    -fx-fill: seagreen;
+}
+	
+
+
+/* .infopane {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: orange;
+    -fx-text-fill: black;
+    -fx-padding: 5px;  
+}*/

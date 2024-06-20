@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1002.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainsceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="423.0" layoutY="14.0" lineSpacing="1.0" prefHeight="29.0" prefWidth="154.0" text="Binär Baum Visualisierung" textFill="#6b3131" textOverrun="LEADING_WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Pane fx:id="drawingpane" layoutX="14.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="976.0" styleClass="drawingpane" stylesheets="@application.css" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="65.0" />
+      <Pane fx:id="infopane" layoutX="13.0" layoutY="618.0" prefHeight="76.0" prefWidth="976.0" styleClass="infopane" stylesheets="@application.css" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" />
+      <Pane fx:id="controllpane" layoutX="15.0" layoutY="722.0" prefHeight="63.0" prefWidth="976.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
+         <children>
+            <Button fx:id="removeBtn" layoutX="311.0" layoutY="23.0" mnemonicParsing="false" onAction="#removeTree" styleClass="button-24" stylesheets="@application.css" text="remove Tree" />
+            <Button fx:id="addBtn" layoutX="105.0" layoutY="23.0" mnemonicParsing="false" onAction="#addClick" styleClass="addBtn" stylesheets="@application.css" text="add" textOverrun="CLIP">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <TextField id="eingabeField" fx:id="eingabeField" layoutX="5.0" layoutY="23.0" prefHeight="25.0" prefWidth="98.0" promptText="Wert eingeben" />
+            <Button fx:id="deleteBtn" layoutX="244.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteNode" styleClass="button-24" stylesheets="@application.css" text="delete" textOverrun="CLIP">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <TextField fx:id="deleteInput" layoutX="151.0" layoutY="23.0" prefHeight="25.0" prefWidth="87.0" promptText="Wert eingeben" />
+            <ToggleButton id="bbaumbtn" fx:id="bbaumbtn" layoutX="844.0" layoutY="21.0" mnemonicParsing="false" onAction="#bbaumBtn" prefHeight="30.0" prefWidth="118.0" styleClass="BB-toggel" stylesheets="@application.css" text="B-Baum" />
+            <Slider fx:id="animationspeed" blockIncrement="1.0" layoutX="698.0" layoutY="17.0" max="50.0" min="1.0" stylesheets="@application.css" value="5.0" />
+         </children>
+      </Pane>
+      <Slider fx:id="positionslider" layoutX="14.0" layoutY="629.0" prefHeight="12.0" prefWidth="976.0" value="50.0" />
+   </children>
+</AnchorPane>
